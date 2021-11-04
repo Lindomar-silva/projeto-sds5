@@ -38,11 +38,13 @@ public class SaleService {
 
 	@Transactional(readOnly = true)
 	public List<SaleSumDTO> amountGroupBySeller() {
+		sellerRepository.findAll();
 		return repository.amountGroupBySeller();
 	}
 
 	@Transactional(readOnly = true)
 	public List<SaleSuccessDTO> successGroupBySeller() {
+		sellerRepository.findAll();
 		return repository.successGroupBySeller();
 	}
 }
