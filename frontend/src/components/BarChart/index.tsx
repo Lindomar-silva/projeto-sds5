@@ -58,6 +58,7 @@ const BarChart = () => {
         plotOptions: {
             bar: {
                 horizontal: true,
+                borderRadius: 13
             }
         },
     };
